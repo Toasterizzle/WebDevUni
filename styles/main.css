@@ -1,0 +1,208 @@
+/*Main Body*/
+body {  
+    margin: 0px;
+    flex-direction: column;
+    background-color: rgb(112, 112, 112);
+}
+
+/*Header*/
+h1 { 
+    font-family: 'Sarabun', sans-serif;
+    font-size: 60px;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    background-color: rgb(100, 100, 100);
+    margin: 0;
+}
+/*Navbar flexbox*/
+@media screen and (min-width: 720px){
+    nav ul{
+        display: flex;
+    }
+
+    nav li {
+       flex: 1 0 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .intro {
+        display: flex;
+    }
+    footer {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 30em) {
+    .main {
+        flex: 1 1 auto;
+    }
+}
+/*Bio info*/
+.main {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: start;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+.toastimg1 {
+    display: flex;
+    padding: 10px;
+    flex: 0 1 auto;
+    width: auto;
+    flex-flow: column wrap;
+    font-size: 18px;
+    margin-right: 10px;
+}
+/*Navigation Editing*/
+nav {
+    background: #363636;
+}
+
+nav ul {
+    padding: 0px;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 20px;
+}
+
+nav a { 
+    text-decoration: none;
+    color: #fff;
+    padding: 50px;
+    padding-top: 2;
+    padding-bottom: 2;
+    margin: 5;
+}
+
+/*Main Body Editing*/
+.intro {
+    display: flex;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 10px;
+    background-color: rgb(46, 46, 46);
+    margin-left:20px;
+    margin-right:20px;
+    font-size: 18px;
+    padding: 50px;
+    color: #ccc;
+}
+
+.wrapper {
+    display: flex;
+    flex: 1 0 auto;
+    padding: 50;
+    background-color: rgb(185, 185, 185);
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Sarabun', sans-serif;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid rgb(158, 158, 158);
+    border-top: none;
+    border-bottom: none;
+}
+/*Home Image*/
+.toastimg1{
+    flex-flow: wrap;
+    justify-self: center;
+}
+
+/*Reviews*/
+.reviewimg1 {
+    flex-flow: wrap;
+    justify-self: center;
+    padding: 20px;
+    justify-items: center;
+    align-self: center;
+    display: flex;
+}
+.review1 {
+    flex-flow: wrap;
+    justify-self: center;
+    display: flex;
+    padding: 10px;
+    flex: 0 1 auto;
+    width: auto;
+    flex-flow: column wrap;
+    font-size: 16px;
+}
+
+.review2 {
+    flex-flow: wrap;
+    justify-self: center;
+    display: flex;
+    padding: 10px;
+    flex: 0 1 auto;
+    width: auto;
+    flex-flow: column wrap;
+    font-size: 16px;
+}
+/*Tutorials*/
+.vidtitle {
+    display: flex;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 10px;
+    background-color: grey;
+    margin-left:40px;
+    margin-right:40px;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    color: #ccc;
+    justify-content: center;
+}
+.video {
+    display: flex;
+    flex: 1 0 auto;
+    padding: 50;
+    background-color: grey;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    border-top: none;
+    border-bottom: none;
+    margin-top: none;
+    margin-bottom: none;
+    justify-content: center;
+}
+/*Jobs*/
+.job1 {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    flex: 0 1 auto;
+    width: auto;
+    flex-flow: nowrap;
+    font-size: 16px;
+}
+.jobtitle {
+    display: block;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 10px;
+    background-color: grey;
+    margin-left:40px;
+    margin-right:40px;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    color: #ccc;
+    justify-content: center;
+    justify-self: center;
+    font-weight: bold;
+}
