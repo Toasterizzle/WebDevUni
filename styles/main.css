@@ -8,7 +8,7 @@ body {
 /*Header*/
 h1 { 
     font-family: 'Sarabun', sans-serif;
-    font-size: 60px;
+    font-size: 40px;
     color: rgb(255, 0, 0);
     text-align: center;
     background-color: rgb(100, 100, 100);
@@ -18,10 +18,12 @@ h1 {
 @media screen and (min-width: 720px){
     nav ul{
         display: flex;
+        list-style-type: none;
     }
 
     nav li {
-       flex: 1 0 0;
+       flex: 1 1 0;
+       list-style-type: none;
     }
 
     nav {
@@ -31,14 +33,10 @@ h1 {
     .intro {
         display: flex;
     }
-    footer {
-        flex-direction: row;
-    }
-}
 
-@media (max-width: 30em) {
+@media (max-width: 20em) {
     .main {
-        flex: 1 1 auto;
+        flex: 1 0 auto;
     }
 }
 /*Bio info*/
@@ -46,6 +44,7 @@ h1 {
     display: flex;
     flex-wrap: nowrap;
     text-align: start;
+    text-decoration: none;
     align-items: center;
     justify-content: center;
     margin: 2px;
@@ -204,5 +203,6 @@ nav a {
     color: #ccc;
     justify-content: center;
     justify-self: center;
-    font-weight: bold;
+    font-weight: bold;}
+
 }
